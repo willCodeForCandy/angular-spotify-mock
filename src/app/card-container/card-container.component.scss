@@ -3,9 +3,11 @@
 
 section {
   padding: $spacing-sm;
+  width: 100%;
 }
 ul {
-  @include flex(row, space-evenly, top);
+  @include flex(row, space-evenly, start);
+  width: 100%;
 }
 
 h2 {
