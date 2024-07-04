@@ -1,0 +1,10 @@
+<section>
+    <h2>{{title}}</h2>
+    <ul>
+        @for(item of list; track item.id) {
+            <app-card [data]="item"/>
+        }
+    </ul>
+</section>
+
+<!-- type="{{item.type}}" name="{{item.name}}" artist="{{item.artist}}" album="{{item.album}}" description="{{item.description}}" img="{{item.img}}" -->

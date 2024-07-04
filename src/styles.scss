@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styles/global/variables';
+@import './styles/global/mixins';
+
+:root {
+    font-family: $main-font-family;
+    background-color: $background-dark-2;
+    color: $text-light-1;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100svh;
+    overflow-x: hidden;
+    background-color: $background-dark-1;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: $text-light-3;
+}

@@ -1,8 +1,9 @@
 @import "../styles/global/variables";
 @import "../styles/global/mixins";
 
-main {
+nav {
+  @include flex(row, end, center, $spacing-md);
+  padding: $spacing-sm $spacing-lg;
   background-color: $background-dark-2;
-  border-radius: 10px;
   margin: 0 $spacing-xs;
 }

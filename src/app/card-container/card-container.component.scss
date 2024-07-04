@@ -1,0 +1,14 @@
+@import "../../styles/global/mixins";
+@import "../../styles/global/variables";
+
+section {
+  padding: $spacing-sm;
+}
+ul {
+  @include flex(row);
+}
+
+h2 {
+  padding-top: $spacing-lg;
+  padding-bottom: $spacing-sm;
+}

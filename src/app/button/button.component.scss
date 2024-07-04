@@ -1,0 +1,36 @@
+@import "../../styles/global/variables";
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: $main-font-family;
+  padding: $spacing-sm $spacing-xl;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  &:hover {
+    transform: scale(1.1);
+  }
+  &.btn-dark {
+    background-color: $text-light-1;
+    color: $background-dark-1;
+    &:hover {
+      background-color: darken($text-light-1, 5%);
+    }
+  }
+  &.btn-light {
+    background-color: $background-dark-2;
+    color: lighten($text-light-3, 20%);
+    &:hover {
+      color: $text-light-1;
+    }
+  }
+  &.btn-border {
+    background-color: $background-dark-1;
+    color: $text-light-1;
+    border: 1px solid darken($text-light-1, 50%);
+    &:hover {
+      border: 1px solid $text-light-1;
+    }
+  }
+}

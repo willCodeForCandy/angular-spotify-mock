@@ -1,0 +1,44 @@
+@import "../../../styles/global/mixins";
+@import "../../../styles/global/variables";
+
+:host {
+  @include flex(column, start, start, $spacing-xs);
+  flex: 1 1 100px;
+  width: 16%;
+  max-width: 200px;
+}
+
+div.img {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    &.artist-img {
+      border-radius: 50%;
+    }
+  }
+}
+div.details {
+  width: 100%;
+  @include flex(column, start, start, 0);
+  h4,
+  p {
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-transform: capitalize;
+    width: 100%;
+    &.data-list {
+      text-wrap: wrap;
+    }
+  }
+}

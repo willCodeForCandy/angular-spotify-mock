@@ -1,0 +1,9 @@
+@import './variables';
+
+@mixin flex($direction, $jc: center, $ai: center, $gap: $spacing-md) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
