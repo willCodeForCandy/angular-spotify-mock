@@ -11,4 +11,15 @@
     </ul>
   </div>
   }
+  <div class="socials">
+    <ul>
+      @for (link of socials; track $index) {
+      <li>
+        <a href="{{ link.url }}" target="_blank" rel="noopener">
+          <img src="{{ link.icon }}" alt="{{ link.name }}" />
+        </a>
+      </li>
+      }
+    </ul>
+  </div>
 </footer>
