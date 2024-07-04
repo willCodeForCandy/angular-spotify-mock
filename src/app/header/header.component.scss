@@ -1,0 +1,24 @@
+@import "../../styles/global/variables";
+@import "../../styles/global/mixins";
+
+header {
+  position: relative;
+}
+.registry-nav {
+  @include flex(row, end, center, $spacing-md);
+  padding: $spacing-sm $spacing-lg;
+  background-color: $background-dark-2;
+  position: sticky;
+}
+
+.responsive-logo {
+  position: absolute;
+  top: $spacing-md;
+  left: $spacing-md;
+  height: 40px;
+  z-index: 10;
+  display: none;
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+}

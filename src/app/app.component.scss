@@ -22,13 +22,6 @@ main {
   width: 100%;
 }
 
-.registry-nav {
-  @include flex(row, end, center, $spacing-md);
-  padding: $spacing-sm $spacing-lg;
-  background-color: $background-dark-2;
-  position: sticky;
-}
-
 menu {
   background-color: $background-dark-2;
   @include flex(column, start, start);

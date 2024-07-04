@@ -11,6 +11,7 @@ import { MenuItemComponent } from './menu-item/menu-item.component';
 import { FindContentCardComponent } from './find-content-card/find-content-card.component';
 import { PlayButtonComponent } from './play-button/play-button.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     RouterOutlet,
     CardContainerComponent,
-    ButtonComponent,
+    HeaderComponent,
     MenuItemComponent,
     FindContentCardComponent,
     PlayButtonComponent,
