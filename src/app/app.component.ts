@@ -9,6 +9,7 @@ import {
 import { ButtonComponent } from './button/button.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 import { FindContentCardComponent } from './find-content-card/find-content-card.component';
+import { PlayButtonComponent } from './play-button/play-button.component';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ import { FindContentCardComponent } from './find-content-card/find-content-card.
     ButtonComponent,
     MenuItemComponent,
     FindContentCardComponent,
+    PlayButtonComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

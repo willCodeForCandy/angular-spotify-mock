@@ -3,7 +3,7 @@
 
 :host {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: minmax(30%, 500px) 1fr;
   margin: $spacing-xs;
   gap: $spacing-xs;
 }
@@ -14,7 +14,7 @@ aside {
 }
 
 main {
-  background: $dark-horizontal-gradient;
+  background: $dark-vertical-gradient-light-top;
   grid-column: 2/3;
 }
 

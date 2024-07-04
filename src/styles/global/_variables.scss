@@ -10,25 +10,31 @@ $background-dark-3: #242424;
 $text-light-1: #fafafa;
 $text-light-2: #f6f6f6;
 $text-light-3: #868686;
-$color-accent-1: #1eda62;
-$bright-blue: #0546ff;
-$electric-violet: #8514f5;
-$french-violet: #8001c6;
-$vivid-pink: #f637e3;
-$hot-red: #f11653;
-$orange-red: #fa2c05;
+$bright-green: #1eda62;
+$bright-blue: #7acaff;
+$electric-violet: #af7de0;
+$french-violet: #9f3dd3;
+$vivid-pink: #dd83d4;
+$hot-red: #e06f8f;
+$orange-red: #e48775;
 
 /* GRADIENTS */
 $pink-to-purple-to-bluehorizontal-gradient: linear-gradient(
   90deg,
   $vivid-pink 0%,
   $french-violet 50%,
-  lighten($bright-blue, 10%) 100%
+  $bright-blue 100%
 );
-$dark-horizontal-gradient: linear-gradient(
+$dark-vertical-gradient-light-top: linear-gradient(
   to bottom,
   darken($background-dark-3, 3%) 0%,
   $background-dark-2 30%
+);
+
+$dark-vertical-gradient-dark-top: linear-gradient(
+  to bottom,
+  darken($background-dark-2, 3%) 0%,
+  $background-dark-3 30%
 );
 
 /* SPACINGS */

@@ -31,3 +31,7 @@ a {
 p {
   color: $text-light-3;
 }
+
+.card:hover .play-btn {
+  opacity: 1;
+}

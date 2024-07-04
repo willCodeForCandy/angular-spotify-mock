@@ -5,7 +5,7 @@ section {
   padding: $spacing-sm;
 }
 ul {
-  @include flex(row);
+  @include flex(row, space-evenly, top);
 }
 
 h2 {

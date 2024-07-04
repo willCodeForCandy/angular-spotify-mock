@@ -1,0 +1,8 @@
+@import "./variables";
+
+@function random-color() {
+  $colors: $bright-blue, $electric-violet, $french-violet, $vivid-pink, $hot-red,
+    $orange-red;
+  $random-index: random(length($colors));
+  @return nth($colors, $random-index);
+}

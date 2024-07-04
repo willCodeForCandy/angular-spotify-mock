@@ -2,12 +2,19 @@
 @import "../../../styles/global/variables";
 
 :host {
-  @include flex(column, start, start, $spacing-xs);
   width: 18%;
   min-width: 15%;
   max-width: 200px;
 }
-
+.card {
+  width: 100%;
+  @include flex(column, start, start, $spacing-xs);
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    background: $dark-vertical-gradient-dark-top;
+  }
+}
 div.img {
   width: 100%;
   padding-top: 100%;
@@ -30,6 +37,8 @@ div.img {
 div.details {
   width: 100%;
   @include flex(column, start, start, 0);
+  padding: $spacing-xs;
+  padding-top: 0;
   h4,
   p {
     @include ellipsis();

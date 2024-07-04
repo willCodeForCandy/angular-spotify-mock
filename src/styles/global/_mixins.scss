@@ -1,9 +1,15 @@
-@import './variables';
+@import "./variables";
 
 @mixin flex($direction, $jc: center, $ai: center, $gap: $spacing-md) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $jc;
-    align-items: $ai;
-    gap: $gap;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
+}
+
+@mixin ellipsis() {
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  overflow: hidden;
 }
