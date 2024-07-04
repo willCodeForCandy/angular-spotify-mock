@@ -1,0 +1,14 @@
+<footer>
+  @for (list of footerData; track $index) {
+  <div>
+    <h3>{{ list.title }}</h3>
+    <ul>
+      @for (item of list.items; track $index) {
+      <li>
+        <a href="#">{{ item }}</a>
+      </li>
+      }
+    </ul>
+  </div>
+  }
+</footer>

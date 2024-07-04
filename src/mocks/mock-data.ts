@@ -145,3 +145,28 @@ export const EXPLORE_CONTENT_LIST = [
     actionText: 'Explorar podcasts',
   },
 ];
+
+export const FOOTER_DATA = [
+  {
+    title: 'Compañía',
+    items: ['Acerca de', 'Empleo', 'For the Record', 'Comunidades'],
+  },
+  {
+    title: 'Para artistas',
+    items: ['Desarrolladores', 'Publicidad', 'Inversores', 'Proveedores'],
+  },
+  {
+    title: 'Enlaces útiles',
+    items: ['Ayuda', 'App gratis para móvil', 'Planes de Spotify'],
+  },
+  {
+    title: 'Planes de Spotify',
+    items: [
+      'Premium Individual',
+      'Premium Duo',
+      'Premium Familiar',
+      'Premium para Estudiantes',
+      'Versión gratuita',
+    ],
+  },
+];
