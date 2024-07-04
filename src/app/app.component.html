@@ -1,8 +1,26 @@
-<app-nav />
+<div class="registry-nav">
+  <app-button text="Registrarse" mode="light" />
+  <app-button text="Iniciar sesión" />
+</div>
 <main>
   <app-card-container title="Artistas Populares" />
   <app-card-container title="Álbumes Populares" [list]="albums" />
   <app-card-container title="Estaciones Populares" [list]="radioStations" />
 </main>
-
-<!-- <router-outlet /> -->
+<aside>
+  <menu>
+    @for (item of sideMenu; track $index) {
+    <app-menu-item [data]="item" />
+    }
+  </menu>
+  <menu>
+    @for (item of libraryMenu; track $index) {
+    <app-menu-item [data]="item" />
+    }
+    <ul>
+      @for (item of newContentMenu; track $index) {
+      <app-find-content-card [data]="item" />
+      }
+    </ul>
+  </menu>
+</aside>

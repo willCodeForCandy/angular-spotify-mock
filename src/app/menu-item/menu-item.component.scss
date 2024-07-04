@@ -1,0 +1,21 @@
+@import "../../styles/global/mixins";
+@import "../../styles/global/variables";
+
+li {
+  @include flex(row, start);
+  font-weight: 600;
+  color: lighten($text-light-3, 20%);
+  transition: all 0.3s;
+  padding: 0 $spacing-sm;
+
+  &:hover {
+    img {
+      filter: brightness(150%);
+    }
+    color: $text-light-1;
+  }
+}
+img {
+  max-height: 32px;
+  transition: all 0.3s;
+}

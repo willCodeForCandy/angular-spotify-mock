@@ -1,0 +1,23 @@
+@import "../styles/global/variables";
+@import "../styles/global/mixins";
+
+:host {
+  width: 100%;
+}
+
+li {
+  background-color: $background-dark-3;
+  width: 100%;
+  padding: $spacing-md;
+  border-radius: 10px;
+  margin-bottom: $spacing-sm;
+  @include flex(column, start, start, $spacing-sm);
+  p {
+    color: $text-light-1;
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 16px;
+    margin-bottom: $spacing-xxs;
+  }
+}

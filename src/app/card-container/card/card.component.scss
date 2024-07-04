@@ -3,8 +3,8 @@
 
 :host {
   @include flex(column, start, start, $spacing-xs);
-  flex: 1 1 100px;
-  width: 16%;
+  width: 15%;
+  min-width: 15%;
   max-width: 200px;
 }
 

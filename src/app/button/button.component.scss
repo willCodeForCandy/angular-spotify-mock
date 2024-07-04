@@ -4,8 +4,7 @@ button {
   cursor: pointer;
   border: none;
   font-family: $main-font-family;
-  padding: $spacing-sm $spacing-xl;
-  border-radius: 40px;
+
   font-weight: 600;
   font-size: 14px;
   &:hover {
@@ -32,5 +31,13 @@ button {
     &:hover {
       border: 1px solid $text-light-1;
     }
+  }
+  &.lg {
+    padding: $spacing-sm $spacing-xl;
+    border-radius: 40px;
+  }
+  &.sm {
+    padding: $spacing-xs $spacing-md;
+    border-radius: 30px;
   }
 }
