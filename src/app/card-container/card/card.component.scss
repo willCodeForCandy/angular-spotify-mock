@@ -3,7 +3,7 @@
 
 :host {
   @include flex(column, start, start, $spacing-xs);
-  width: 15%;
+  width: 18%;
   min-width: 15%;
   max-width: 200px;
 }
@@ -32,9 +32,7 @@ div.details {
   @include flex(column, start, start, 0);
   h4,
   p {
-    text-overflow: ellipsis;
-    text-wrap: nowrap;
-    overflow: hidden;
+    @include ellipsis();
     text-transform: capitalize;
     width: 100%;
     &.data-list {

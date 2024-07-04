@@ -1,3 +1,6 @@
+@if(data.category === 'radio') {
+<app-radio-image [data]="data" />
+} @else {
 <div class="img">
   <img
     src="{{ data.img }}"
@@ -5,6 +8,8 @@
     [ngClass]="{ 'artist-img': data.category === 'artist' }"
   />
 </div>
+}
+
 <div class="details">
   <h4>{{ data.name }}</h4>
   <p [ngClass]="{ 'data-list': data.category === 'radio' }">
