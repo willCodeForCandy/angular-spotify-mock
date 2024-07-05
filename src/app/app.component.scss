@@ -2,24 +2,29 @@
 @import "../styles/global/mixins";
 
 :host {
-  display: grid;
-  grid-template-columns: 300px 1fr;
+  display: flex;
   margin: $spacing-xs;
   gap: $spacing-xs;
+  overflow: hidden;
   min-height: 100svh;
-  width: 100vw;
+}
+
+aside {
+  min-width: 280px;
+  max-width: 400px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 main {
   background: $dark-vertical-gradient-light-top;
   flex-grow: 1;
   overflow-y: auto;
-  width: 100%;
 }
 
 menu {
@@ -34,8 +39,6 @@ menu {
     @include flex(column, start, start);
     margin: $spacing-xs;
     gap: $spacing-xs;
-    min-height: 100svh;
-    width: 100vw;
   }
   aside {
     display: none;

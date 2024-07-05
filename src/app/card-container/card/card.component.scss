@@ -2,13 +2,11 @@
 @import "../../../styles/global/variables";
 
 :host {
-  width: 18%;
-  min-width: 15%;
+  min-width: 120px;
   max-width: 200px;
-  flex: 0 0 auto;
+  width: 18%;
 }
 .card {
-  width: 100%;
   @include flex(column, start, start, $spacing-xs);
   position: relative;
   cursor: pointer;
