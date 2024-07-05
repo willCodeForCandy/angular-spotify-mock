@@ -6,7 +6,7 @@ section {
   max-width: 100%;
 }
 ul {
-  @include flex(row, space-evenly, start);
+  @include flex(row, space-evenly, start, 0);
   max-width: 100%;
   overflow-x: auto;
   @include scrollbar();
