@@ -13,3 +13,30 @@
   text-wrap: nowrap;
   overflow: hidden;
 }
+
+@mixin scrollbar(
+  $width: $spacing-xxs,
+  $track-color: $background-dark-1,
+  $thumb-color: $background-dark-2,
+  $thumb-hover-color: $background-dark-3
+) {
+  /* width */
+  &::-webkit-scrollbar {
+    width: $width;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: $track-color;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $thumb-color;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $thumb-hover-color;
+  }
+}
