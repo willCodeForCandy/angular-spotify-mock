@@ -12,16 +12,17 @@
 button.play-btn {
   background-color: $bright-green;
   border: none;
+  cursor: pointer;
   @include flex(row);
   border-radius: 50%;
   -webkit-box-shadow: -11px 15px 27px -13px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: -11px 15px 27px -13px rgba(0, 0, 0, 0.69);
   box-shadow: -11px 15px 27px -13px rgba(0, 0, 0, 0.69);
-  height: 30%;
+  height: 35%;
   aspect-ratio: 1;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: $spacing-md;
+  right: $spacing-md;
   opacity: 0;
   transition: all 0.3s;
   &:hover {

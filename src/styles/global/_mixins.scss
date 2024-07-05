@@ -17,12 +17,13 @@
 @mixin scrollbar(
   $width: $spacing-xxs,
   $track-color: $background-dark-1,
-  $thumb-color: $background-dark-2,
-  $thumb-hover-color: $background-dark-3
+  $thumb-color: $background-dark-3,
+  $thumb-hover-color: $background-dark-2
 ) {
   /* width */
   &::-webkit-scrollbar {
     width: $width;
+    height: $width;
   }
 
   /* Track */
