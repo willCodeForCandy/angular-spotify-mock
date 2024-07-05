@@ -9,6 +9,7 @@
 .card {
   @include flex(column, start, start, $spacing-xs);
   position: relative;
+  padding: $spacing-xs;
   cursor: pointer;
   &:hover {
     background: $dark-vertical-gradient-dark-top;
